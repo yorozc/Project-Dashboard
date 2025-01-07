@@ -10,19 +10,27 @@ img{
 .app{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: 100vh;
+    width: 100vh;
 }
 
 .sidebar{
-    display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-row: 1 / 2;
     background-color: #1992D4;
     color: white;
     padding-top: 10px;
-    padding-right: 20px;
+    padding-right: 32px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    
 }
 
 .user-options{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 32px;
     padding: 0;
 }
 
@@ -32,12 +40,14 @@ img{
 
 .logo{
     display: flex;
-    gap: 12px;
+    gap: 8px;
+    font-size: 16px;
 }
 
 ul{
     list-style-type: none;
 }
+
 li{
-    display:flex;
+    display: flex;
 }
